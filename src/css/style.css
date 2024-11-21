@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../img/funeral.avif);
+  background-size: cover;
+  height: 600px;
+}
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+}
