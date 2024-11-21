@@ -1,24 +1,35 @@
-nav {
-  margin: 27px auto 0;
+:root {
+  --color-1: #533087;
+  --color-2: #6a3cae;
+  --color-3: #8457c6;
+  --color-4: #a07dd4;
+  --color-5: #bca2e1;
+}
 
+nav {
   position: relative;
+  margin: 0 auto;
   width: 590px;
   height: 50px;
   /* background-color: #f2f3f4; */
   /* border-radius: 8px; */
+  display: flex; /* Usa flexbox para alinhar os itens */
+  justify-content: flex-end;
   font-size: 0;
+  text-align: right;
 }
 nav a {
   line-height: 50px;
-  height: 100%;
+  /* height: 100%; */
   font-size: 15px;
   display: inline-block;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   color: white;
+  padding: 0 10px;
   cursor: pointer;
 }
 nav .animation {
@@ -48,19 +59,19 @@ nav .start-home,
 a:nth-child(1):hover ~ .animation {
   width: 100px;
   left: 0;
-  background-color: #dc04b4;
+  background-color: var(--color-3);
 }
 nav .start-about,
 a:nth-child(2):hover ~ .animation {
   width: 110px;
   left: 100px;
-  background-color: #e74c3c;
+  background-color: var(--color-4);
 }
 nav .start-blog,
 a:nth-child(3):hover ~ .animation {
   width: 100px;
   left: 210px;
-  background-color: #3498db;
+  background-color: var(--color-5);
 }
 nav .start-portefolio,
 a:nth-child(4):hover ~ .animation {
@@ -72,34 +83,5 @@ nav .start-contact,
 a:nth-child(5):hover ~ .animation {
   width: 120px;
   left: 470px;
-  background-color: #e67e22;
-}
-
-body {
-  font-size: 12px;
-  font-family: sans-serif;
-  background: #2c3e50;
-}
-h1 {
-  text-align: center;
-  margin: 40px 0 40px;
-  text-align: center;
-  font-size: 30px;
-  color: #ecf0f1;
-  text-shadow: 2px 2px 4px #000000;
-  font-family: "Cherry Swash", cursive;
-}
-
-p {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #ecf0f1;
-  font-family: "Cherry Swash", cursive;
-  font-size: 16px;
-}
-
-span {
-  color: #2bd6b4;
+  background-color: var(--color-1);
 }
